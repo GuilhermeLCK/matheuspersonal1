@@ -1,0 +1,114 @@
+.container-Operation {
+  width: 100%;
+  padding-block: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1250px) {
+    padding-block: 40px;
+  }
+}
+
+.content-Operation {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 769px) {
+    flex-direction: column-reverse;
+  }
+
+  .content-Operation-Inf {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 769px) {
+      width: 98%;
+    }
+
+    p {
+      width: 100%;
+      color: #000000;
+      text-align: start;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+
+      @media screen and (max-width: 769px) {
+        text-align: start;
+      }
+    }
+
+    a {
+      margin-top: 25px;
+      z-index: 99;
+      display: flex;
+      width: 250px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+      background-color: var(--main-color);
+      transition: 0.4s;
+      transform: translate(0px, 0px);
+
+      &:hover {
+        background-color: #000000;
+        color: #ffff;
+        transition: 0.2s;
+        transform: translate(10px, 0px);
+      }
+
+      @media screen and (max-width: 769px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .content-Operation-Logo {
+    min-height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 80%;
+      height: 500px;
+      object-fit: cover;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      border-radius: 5px;
+
+      @media screen and (max-width: 769px) {
+        background-color: red;
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    @media screen and (max-width: 769px) {
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
+}

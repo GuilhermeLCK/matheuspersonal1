@@ -1,0 +1,28 @@
+.icon-whats {
+  position: fixed;
+  bottom: 15px;
+  z-index: 999;
+  right: 15px;
+
+  @media (max-width: 768px) {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  img {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 15px #00000094);
+    width: 55px;
+    object-fit: contain;
+    transition: 0.8s;
+    transform: scale(1);
+
+    &:hover {
+      transition: 0.4s;
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      width: 50px;
+    }
+  }
+}
